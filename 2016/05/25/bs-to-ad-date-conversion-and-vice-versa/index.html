@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>BS to AD date conversion and vice versa | The IT Alerts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="Date Conversion,BS-AD Conversion" />
+    
+    <meta name="description" content="In this article we will learn to convert a date from A.D. to B.S. and vice versa using the Javascript programming language.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="BS to AD date conversion and vice versa">
+<meta property="og:url" content="http://theitalerts.com/2016/05/25/bs-to-ad-date-conversion-and-vice-versa/index.html">
+<meta property="og:site_name" content="The IT Alerts">
+<meta property="og:description" content="In this article we will learn to convert a date from A.D. to B.S. and vice versa using the Javascript programming language.">
+<meta property="og:image" content="http://theitalerts.com/2016/05/25/bs-to-ad-date-conversion-and-vice-versa/cover.png">
+<meta property="og:updated_time" content="2016-05-26T06:25:35.433Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="BS to AD date conversion and vice versa">
+<meta name="twitter:description" content="In this article we will learn to convert a date from A.D. to B.S. and vice versa using the Javascript programming language.">
+<meta name="twitter:image" content="http://theitalerts.com/2016/05/25/bs-to-ad-date-conversion-and-vice-versa/cover.png">
+    
+
+    
+
+    
+
+    <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/vendor/titillium-web/styles.css">
+    <link rel="stylesheet" href="/vendor/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/vendor/jquery/2.0.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/vendor/fancybox/jquery.fancybox.css">
+    
+    
+        <link rel="stylesheet" href="/vendor/scrollLoading/style.css">
+    
+    
+        <script type="text/javascript">
+(function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-78369413-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+    
+    
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">Sharing of ideas, knowledges and thoughts related to IT</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">Home</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Programming/">Programming</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Programming/Javascript/">Javascript</a></li></ul></li></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">About</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/Programming/Javascript/">Javascript</a>
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="post-bs-to-ad-date-conversion-and-vice-versa" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        BS to AD date conversion and vice versa
+        </h1>
+    
+
+            </header>
+        
+        <div class="article-subtitle">
+            <a href="/2016/05/25/bs-to-ad-date-conversion-and-vice-versa/" class="article-date">
+    <time datetime="2016-05-25T12:59:45.000Z" itemprop="datePublished">2016-05-25</time>
+</a>
+            
+    <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/BS-AD-Conversion/">BS-AD Conversion</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Date-Conversion/">Date Conversion</a></li></ul>
+
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            <p>In this article we will learn to convert a date from A.D. to B.S. and vice versa using the <code>Javascript</code> programming language. <a id="more"></a> Although we are using <code>Javascript</code> for the date conversion it should not be much more tricky to <a href="http://www.wikipedia.org/language_port" target="_blank" rel="external">port</a> this application in some other languages out there.</p>
+<img src="/2016/05/25/bs-to-ad-date-conversion-and-vice-versa/cover.png" alt="AD-BS/BS-AD date conversion" title="AD-BS/BS-AD date conversion">
+<p>If you google <a href="http://www.google.com?q=ad+to+bs+conversion" target="_blank" rel="external">ad to bs conversion</a>, you’ll get bunch of links for web, mobile and desktop applications which converts the date for you, but if you wanted to know the actual logic behind this conversion mechanism then you are out of luck. I am here to provide you with some ideas just to make it work.</p>
+<h1 id="Lets-get-started"><a href="#Lets-get-started" class="headerlink" title="Lets get started"></a>Lets get started</h1><h2 id="A-D-to-B-S-Conversion"><a href="#A-D-to-B-S-Conversion" class="headerlink" title="A.D. to B.S. Conversion"></a>A.D. to B.S. Conversion</h2><p>The first step involves picking a B.S. date and its corresponding A.D. date, which acts as the lower limit for our converter application. In this example application those values are:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">START_DATE_BS = &#123;year: <span class="number">1990</span>, month: <span class="number">1</span>, date: <span class="number">1</span>&#125; <span class="comment">//1st of Baisakh 1990</span></span><br><span class="line">START_DATE_AD = <span class="keyword">new</span> <span class="built_in">Date</span>(<span class="number">1933</span>, <span class="number">3</span>, <span class="number">12</span>); <span class="comment">//12th of April 1933 which corresponds to one day before START_DATE_BS</span></span><br></pre></td></tr></table></figure>
+<p>Next we need to write the method which does the actual conversion, we call it <code>ad2bs</code> in our case. Give a quick glance at following code snippet, and don’t freak out as I am going to tell you whats going in there. Treat it like an <code>unseen passage</code> given in board examinations and read it roughly not thoroughly at least for now.</p>
+<script src="//gist.github.com/80e60f0988a51cd6e0c055a94682e998.js?file=converter.js"></script>
+<p>This method <code>convertDate.ad2bs</code> accepts an instance of javascript <code>Date</code> object as only parameter which is <code>adDate</code>. Now we calculate the difference between input date (ie. <code>adDate</code>) and start ad date (ie. <code>START_DATE_AD</code>) as follows:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">daysFromStartDateAd = <span class="built_in">Math</span>.floor( (adDate.getTime() - START_DATE_AD.getTime())/ ( <span class="number">86400</span> * <span class="number">1000</span>) );</span><br></pre></td></tr></table></figure>
+<p>In case you stuck somewhere in above code:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">daysFromStartDateAd = (adDate.getTime() - START_DATE_AD.getTime());</span><br><span class="line">daysFromStartDateAd = daysFromStartDateAd / ( <span class="number">86400</span> * <span class="number">1000</span>);</span><br><span class="line">daysFromStartDateAd = <span class="built_in">Math</span>.floor(daysFromStartDateAd);</span><br></pre></td></tr></table></figure>
+<p>Now the idea is to calculate how many years, months and days does <code>daysFromStartDateAd</code> means in B.S. Date system starting from <code>START_DATE_BS</code>, hence converting ad to bs.</p>
+<p>The following sections tells you how to grab years, months and date out of <code>daysFromStartDateAd</code> in step by step fashion. Which also describes the <code>convertDate.ad2bs</code> method.</p>
+<h4 id="Determining-the-year"><a href="#Determining-the-year" class="headerlink" title="Determining the year"></a>Determining the year</h4><p>Assign <code>START_DATE_BS</code> to <code>bsDate</code>. Do a while loop until <code>daysFromStartDateAd &gt; 0</code>. Each iteration adds one to bs year (ie. <code>bsDate.year</code>) if <code>daysFromStartDateAd</code> is greater than sum of days in bs year (ie. <code>daysInBsYear</code>). <code>daysInBsYear</code> is reduced from <code>daysFromStartDateAd</code> after increment bs year by one.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">do</span> &#123;</span><br><span class="line">    <span class="keyword">var</span> daysInBsYear;</span><br><span class="line"></span><br><span class="line">    daysInBsYear = array_sum(convertDate.BS_DAYS_IN_YEAR[bsDate.year.toString()]);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (daysInBsYear &gt; daysFromStartDateAd) &#123;</span><br><span class="line"></span><br><span class="line">      <span class="comment">//<span class="doctag">TODO:</span> Calculate month and date</span></span><br><span class="line"></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line"></span><br><span class="line">      <span class="comment">// ## DETERMINING THE YEAR ##</span></span><br><span class="line"></span><br><span class="line">      <span class="comment">//Calculate year</span></span><br><span class="line">      bsDate.year++;</span><br><span class="line">      daysFromStartDateAd -= daysInBsYear;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">  &#125; <span class="keyword">while</span> (daysFromStartDateAd &gt; <span class="number">0</span>);</span><br></pre></td></tr></table></figure>
+<h4 id="Determining-the-month"><a href="#Determining-the-month" class="headerlink" title="Determining the month"></a>Determining the month</h4><p>But if <code>daysFromStartDateAd</code> is less than <code>daysInBsYear</code> its time to calculate <code>month</code> and <code>date</code> rather than <code>year</code> out of <code>daysInBsYear</code>. Since there are 12 months in an year loop through each month using a for-loop. Each iteration adds one to the bs month (ie. <code>bsDate.month</code>) if <code>daysFromStartDateAd</code> is greater than number of days in bs month (ie. <code>daysInBsMonth</code>). <code>daysInBsMonth</code> is reduced from <code>daysFromStartDateAd</code> after increment bs month by one.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">if</span> (daysInBsYear &gt; daysFromStartDateAd) &#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>, daysInBsMonth; i &lt; convertDate.MONTHS_IN_YEAR; i++) &#123;</span><br><span class="line">    daysInBsMonth = convertDate.BS_DAYS_IN_YEAR[bsDate.year.toString()][i];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (daysInBsMonth &gt;= daysFromStartDateAd) &#123;</span><br><span class="line"></span><br><span class="line">      <span class="comment">//<span class="doctag">TODO:</span> Calculate date</span></span><br><span class="line"></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line"></span><br><span class="line">      <span class="comment">// ## DETERMINING THE MONTH ##</span></span><br><span class="line"></span><br><span class="line">      <span class="comment">//Calculate month</span></span><br><span class="line">      bsDate.month++;</span><br><span class="line">      daysFromStartDateAd -= daysInBsMonth;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line"></span><br><span class="line">  <span class="comment">//Calculate year</span></span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="Determining-the-date"><a href="#Determining-the-date" class="headerlink" title="Determining the date"></a>Determining the date</h4><p>But if <code>daysFromStartDateAd</code> is less than <strong>or</strong> equals to <code>daysInBsMonth</code> then its the bs date value (ie. <code>bsDate.date = daysFromStartDateAd</code>).<br>Assign <code>null</code> or <code>0</code> to <code>daysFromStartDateAd</code> to  exit from the while loop. Then we break out of the for loop immediately after assignment.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (daysInBsMonth &gt;= daysFromStartDateAd) &#123;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// ## DETERMINING THE DATE ##</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">//Calculate date</span></span><br><span class="line">  bsDate.date = daysFromStartDateAd;</span><br><span class="line">  daysFromStartDateAd = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">break</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Believe it or not, the conversion is complete! Return <code>bsDate</code> value and it’s done.</p>
+<h2 id="B-S-to-A-D-conversion"><a href="#B-S-to-A-D-conversion" class="headerlink" title="B.S. to A.D. conversion"></a>B.S. to A.D. conversion</h2><p>Conversion from B.S to A.D. is much more simpler compared to A.D. to B.S. conversion, which is accomplished in <code>convertDate.bs2ad</code> method. All we need to do is calculate the difference between input bs date (ie. <code>bsDate</code>) and start bs date (ie. <code>START_DATE_BS</code>). This is done by summing days in years, days in months and the date value from <code>START_DATE_BS</code> to <code>bsDate</code>. Convert it to milliseconds by multiplying the result by <code>86400 * 1000</code>. Add it to number of milliseconds till start ad date (ie. <code>START_DATE_AD.getTime()</code>). Finally, construct the javascript date from that result to get the output.</p>
+<h2 id="Live-example"><a href="#Live-example" class="headerlink" title="Live example"></a>Live example</h2><iframe scrolling="no" width="100%" height="300" src="http://jsfiddle.net/okn874cp/embedded/result,resources/light" frameborder="0" allowfullscreen></iframe>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="http://theitalerts.com/2016/05/25/bs-to-ad-date-conversion-and-vice-versa/" data-id="cionxessl0000vajxb2k1tjgb" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="twitter" href="/" target="_blank">
+                        <i class="icon fa fa-twitter"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="https://www.facebook.com/theitalerts/" target="_blank">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="google-plus" href="/" target="_blank">
+                        <i class="icon fa fa-google-plus"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/theitalerts/theitalerts.github.io" target="_blank">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2016/05/25/bs-to-ad-date-conversion-and-vice-versa/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/2016/05/25/bs-to-ad-date-conversion-and-vice-versa/cover.png)" alt="BS to AD date conversion and vice versa" class="thumbnail-image"></span>
+    
+    
+</a>
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Javascript/">Javascript</a></p>
+                            <p class="item-title"><a href="/2016/05/25/bs-to-ad-date-conversion-and-vice-versa/" class="title">BS to AD date conversion and vice versa</a></p>
+                            <p class="item-date"><time datetime="2016-05-25T12:59:45.000Z" itemprop="datePublished">2016-05-25</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/">Programming</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/Javascript/">Javascript</a><span class="category-list-count">1</span></li></ul></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">tags</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/BS-AD-Conversion/">BS-AD Conversion</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Date-Conversion/">Date Conversion</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/BS-AD-Conversion/" style="font-size: 10px;">BS-AD Conversion</a> <a href="/tags/Date-Conversion/" style="font-size: 10px;">Date Conversion</a>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2016 The IT Alerts Team &lt;team@theitalerts.com&gt;</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script>
+    var disqus_shortname = 'theitalerts';
+    
+    
+    var disqus_url = 'http://theitalerts.com/2016/05/25/bs-to-ad-date-conversion-and-vice-versa/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+    
+        <script src="/vendor/fancybox/jquery.fancybox.pack.js"></script>
+    
+
+    
+        <script src="/vendor/scrollLoading/jquery.scrollLoading.js"></script>
+        <script src="/vendor/scrollLoading/main.js"></script>
+    
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
