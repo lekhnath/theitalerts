@@ -14,7 +14,7 @@ comments: true
 date: 2016-05-25 18:44:45
 ---
 
-**Author:** [{{ author.name }}](http://lekhnathrijal.com.np) [<i class="fa fa-twitter fa-fw"></i>](http://twitter.com/lekhnathrijal) [<i class="fa fa-facebook fa-fw"></i>](http://facebook.com/writeowner)
+**Author:** [{{ author.name }}](http://lekhnathrijal.com.np) [<i class="fa fa-twitter fa-fw"></i>](http://twitter.com/lekhnathrijal) [<i class="fa fa-facebook fa-fw"></i>](http://facebook.com/writeowner) [<i class="fa fa-github fa-fw"></i>](https://github.com/lekhnath)
 
 ----
 
