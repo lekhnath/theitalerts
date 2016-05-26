@@ -13,7 +13,12 @@ author:
 comments: true
 date: 2016-05-25 18:44:45
 ---
-In this article we will learn to convert a date from A.D. to B.S. and vice versa using the `Javascript` programming language. <!-- more --> Although we are using `Javascript` for the date conversion it should not be much more tricky to [port](http://www.wikipedia.org/language_port) this application in some other languages out there.
+
+**Author:** [{{ author.name }}](http://lekhnathrijal.com.np) [<i class="fa fa-twitter fa-fw"></i>](http://twitter.com/lekhnathrijal) [<i class="fa fa-facebook fa-fw"></i>](http://facebook.com/writeowner)
+
+----
+
+In this article we will learn to convert a date from A.D. to B.S. and vice versa using the `Javascript` programming language. <!-- more --> Although we are using `Javascript` for the date conversion it should not be much more tricky to [port](https://en.wikipedia.org/wiki/Porting) this application in some other languages out there.
 
 {% asset_img cover.png 'AD-BS/BS-AD date conversion' %}
 
@@ -30,7 +35,7 @@ START_DATE_BS = {year: 1990, month: 1, date: 1} //1st of Baisakh 1990
 START_DATE_AD = new Date(1933, 3, 12); //12th of April 1933 which corresponds to one day before START_DATE_BS
 ```
 
-Next we need to write the method which does the actual conversion, we call it `ad2bs` in our case. Give a quick glance at following code snippet, and don't freak out as I am going to tell you whats going in there. Treat it like an `unseen passage` given in board examinations and read it roughly not thoroughly at least for now.
+Next we need to write the method which does the actual conversion, we call it `ad2bs` in our case. Give a quick glance at following code snippet, and don't freak out as I am going to tell you whats going in there. Treat it like an `unseen passage` given in board examinations and read it roughly from top to bottom even if you don't understand it much.
 
 {% gist 80e60f0988a51cd6e0c055a94682e998 converter.js %}
 
