@@ -18,7 +18,7 @@ date: 2016-05-25 18:44:45
 
 ----
 
-In this article we will learn to convert a date from A.D. to B.S. and vice versa using the `Javascript` programming language. <!-- more --> Although we are using `Javascript` for the date conversion it should not be much more tricky to [port](https://en.wikipedia.org/wiki/Porting) this application in some other languages out there.
+In this article we will learn to convert a date from Bikram Sambat (B.S.) to Anno Domini (A.D.) and vice versa using the `Javascript` programming language. <!-- more --> Although we are using `Javascript` for the date conversion it should not be much more tricky to [port](https://en.wikipedia.org/wiki/Porting) this application in some other languages out there.
 
 {% asset_img cover.png 'AD-BS/BS-AD date conversion' %}
 
