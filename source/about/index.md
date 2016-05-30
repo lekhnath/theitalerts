@@ -13,7 +13,7 @@ We are IT enthusiastic based on Kathmandu, Nepal.
   </div>
 
   <div style="display:table-cell; padding:15px; width:50%;">
-    <div class="about-container"> {% img 'thumbnail' 'about-avatar' /about/avatar.png 250 250 'Subarna Ghimire' %} </div> <p style="margin-top:00;line-height:1em;"> <center><strong> Subarna Ghimire </strong></center> Assistant System and Network Engineer @ Neoteric Nepal Pvt. Ltd. &amp; Co-founder of this site </p>
+    <div class="about-container"> {% img 'thumbnail' 'about-avatar' /about/subarna.png 250 250 'Subarna Ghimire' %} </div> <p style="margin-top:00;line-height:1em;"> <center><strong> Subarna Ghimire </strong></center> Assistant System and Network Engineer @ Neoteric Nepal Pvt. Ltd. &amp; Co-founder of this site </p>
   </div>
 </div>
 
